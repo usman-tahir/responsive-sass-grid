@@ -38,3 +38,17 @@ img {
   width: 100%;
   min-height: 1px;
 }
+
+/*
+  Demo styling
+*/
+* {
+  color: #363742;
+}
+
+span {
+  display: block;
+  background: #c2f0ff;
+  padding: 1em 0;
+  text-align: center;
+}
