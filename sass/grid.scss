@@ -13,3 +13,21 @@
 .row {
   @extend %clearfix;
 }
+
+.wrapper,
+.row {
+  @extend %clearfix;
+}
+
+.wrapper {
+  width: 95%;
+  max-width: $grid-max-width;
+}
+
+@media #{$breakpoint-medium} {
+  @for $i from 1 through $grid-columns {
+    .column-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+  }
+}
